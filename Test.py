@@ -1,4 +1,26 @@
 
+
+
+
+# test input
+'''
+lst = []
+n = int(input("Enter your number of elements: "))       # the default input type is character, to get a integer, you need add an int()
+for i in range(0, n):
+    ele=[input(), int(input())]
+    lst.append(ele)
+print(lst)
+'''
+# better one 
+'''
+lst1 = []
+lst2 = []
+lst1 = [item for item in input("enter your list item: ").split()]
+lst2 = [int(item) for item in input("enter your list item: ").split()]
+print(lst1)
+print(lst2)
+'''
+
 # lambda function
 # lambda is a small anonymous function:
 # it has a form like this:
@@ -46,12 +68,52 @@ print(test)
 '''
 
 # getting an input of a list (third method)
-
+'''
 n = int(input("enter the number of elements of your list: "))
+a = list(map(int, (input("\nenter your numbers: ").strip().split())))[:n]
+print(a)
+'''
+'''
+x = '3'
+print("hello:" + x)
+'''
+# what is [:n] in python?
+'''
+txt = "hello, world!"
+x1 = txt[2:]
+x2 = txt[:2]
+x3 = txt[:-2]
+x4 = txt[2:-2]
+print(f"{x1}\n{x2}\n{x3}\n{x4}")
+'''
+'''
+txt = "welcome to janan's workplace"
+x = txt.split()           # def:     .split(delimiter, max number of the delimiter)
+print(x)
+phase = "hello everyone, my name is Janan Zyu"
+y = phase.split(",")
+print(y)
+z = phase.split(" ",3)
+print(z)
+'''
 
+# strip     # remove character 
+'''
+text = "   welcome to china   "
+print(text)
+print(len(text))
+print(text.strip())     # default is to remove the begining and trailing space of a character  
+text1 = "welcome to china"         # you can set to remove some characters in the begining and trailing
+print(text1.strip())
+txt1 = "hello, janan, welcome to our community"
+print(txt1.strip("h,eloyt "))
 
+txt = ",,,,,rrttgg.....banana....rrr"
 
+x = txt.strip(",.grt")
 
+print(x)
+'''
 
 # test int
 # if the value inside 'int' is not an integer, then there will be an error
