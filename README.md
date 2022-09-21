@@ -1,1 +1,1 @@
-# This is a repository for Leetcode
+# This is a repository for Leetcode.
