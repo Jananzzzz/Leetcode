@@ -6,6 +6,24 @@
 
 
 
+
+
+
+
+
+
+'''
+def testreturn(x: int):
+    if x == 1 :
+        return(True)
+
+testreturn(int(input("enter your integer: ")))
+'''
+
+'''
+for i in range(int(1.6)):
+    print("test")
+'''
 '''
 print(2//2)     # // is floor division in python
 x = 2
@@ -18,13 +36,13 @@ x is not y
 x in y
 x not in y
 '''
-
+'''
 tuple = (1, 2, 3, 45, 5)
 print(tuple.index(3))
 print(tuple.count(1))
 # .append(one value)
 # .extend(one list)
-
+'''
 
 
 
