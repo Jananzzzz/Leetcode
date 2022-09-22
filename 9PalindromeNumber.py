@@ -27,13 +27,12 @@ class Solution:
         revert = 0
         while(revert < x): 
             revert = revert*10 + x%10
-            x /= 10
+            x //= 10
         print(x, revert)
-        return x == revert or x == revert/10
+        return x == revert or x == revert//10
 
 test = Solution()
-# test.isPalindrome(int(input("enter your integer")))
-test.isPalindrome(1)
+print(test.isPalindrome(int(input("enter your integer"))))
 
 
 

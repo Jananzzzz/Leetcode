@@ -1,4 +1,4 @@
-# a common use of class in python:
+# a common use of class in python in vscode:
 class Solution(object):
 
     def __init__(self, nums, target):
