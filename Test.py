@@ -6,6 +6,27 @@
 
 
 
+'''
+print(2//2)     # // is floor division in python
+x = 2
+x ^= 3
+x >>= 3
+# operator in python:
+x is y
+x is not y
+# and or not
+x in y
+x not in y
+'''
+
+tuple = (1, 2, 3, 45, 5)
+print(tuple.index(3))
+print(tuple.count(1))
+# .append(one value)
+# .extend(one list)
+
+
+
 
 
 
