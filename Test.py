@@ -1,6 +1,8 @@
 
 
-
+string = ""
+string = string + "s"
+print(string)
 
 '''
 
