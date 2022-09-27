@@ -1,11 +1,16 @@
 
+x = 1.6
+print(int(x))
 
+'''
+p = ["ss", 'ss', "sss"]
+p.append("m")
+print(p)
+'''
+'''
 string = ""
 string = string + "s"
 print(string)
-
-'''
-
 '''
 
 '''
