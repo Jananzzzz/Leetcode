@@ -1,6 +1,42 @@
 
-x = 1.6
-print(int(x))
+
+class ListNode:
+    def __init__(self, val=0, next=None) -> None:
+        self.val = val
+        self.next = next
+
+z = ListNode(5, )
+k = ListNode(3, z)
+M = ListNode(5, k)
+j = ListNode(8, M)
+
+fast = [j, M, k, z]
+print(fast)
+x = 0
+while fast and x < 3:
+    fast = fast.next      # here is the problem
+    x += 1
+print(fast)
+
+
+
+
+
+
+'''
+if True:
+    print(10)
+if False:
+    {}
+else: print(1)
+'''
+
+'''
+s = '222'   
+for i in s:
+    print(i) 
+'''
+
 
 '''
 p = ["ss", 'ss', "sss"]
