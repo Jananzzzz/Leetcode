@@ -1,5 +1,10 @@
 
 
+
+
+
+
+'''
 class ListNode:
     def __init__(self, val=0, next=None) -> None:
         self.val = val
@@ -17,10 +22,7 @@ while fast and x < 3:
     fast = fast.next      # here is the problem
     x += 1
 print(fast)
-
-
-
-
+'''
 
 
 '''
