@@ -1,9 +1,19 @@
 
+
+guess = int(3)
+print(int(guess/2))
+
+
+
+'''
+a = [1, 2, 3, 4, 5]
+print(a[2: 4])
+'''
+
+'''
 txt = "For only {price:.2f} dollars!"
 print(txt.format(price = 49))
-
-
-
+'''
 
 '''
 class ListNode:
