@@ -1,8 +1,17 @@
 
 
+
+
+'''
+splitInput = input("input your integers one by one: ").split()
+print(splitInput)
+# the type of splitInput is "list"
+'''
+
+'''
 guess = int(3)
 print(int(guess/2))
-
+'''
 
 
 '''
