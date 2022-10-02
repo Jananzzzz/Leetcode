@@ -2,6 +2,29 @@
 
 
 
+
+
+
+
+
+
+
+
+'''     # while x has not been assigned a specific value, the code 'x = y' just pass the address of y to x.
+        # and then if we give a value to x (the addres of y), the value of y will also be changed.
+y = [1, 2, 3]
+x = y
+x = [1, 7, 7]
+m = 0
+while m<3:
+    x[m] = 6
+    m += 1
+
+print(x)
+print(y)
+
+'''
+
 '''
 splitInput = input("input your integers one by one: ").split()
 print(splitInput)
