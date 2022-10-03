@@ -1,3 +1,9 @@
+
+a = [1, 2, 3]
+print(a[1:2])
+
+
+'''
 nums1 = [1, 2]
 nums2 = [3, 4]
 for i in nums1:
@@ -10,6 +16,7 @@ if k%2 == 0:
     print ((nums2[int(k/2) - 1] + nums2[k//2])/2)
 if k%2 == 1:
     print (nums2[k//2]/2)
+'''
 
 '''
 a = [1, 3, 5, 4, 6, 6, 8]
