@@ -1,5 +1,25 @@
+nums1 = [1, 2]
+nums2 = [3, 4]
+for i in nums1:
+    nums2.append(i)
+nums2.sort()
+print(nums2)   
 
+k = len(nums2)
+if k%2 == 0:
+    print ((nums2[int(k/2) - 1] + nums2[k//2])/2)
+if k%2 == 1:
+    print (nums2[k//2]/2)
 
+'''
+a = [1, 3, 5, 4, 6, 6, 8]
+a.sort()
+print(a)
+
+b = [1, 3, 4, 5, 6, 2, 2 ,2]           # you can't use sort function like this
+c = b.sort()                        # b.sort() is not a list, it just an option to make
+print(c)
+'''
 
 
 # TreeNode function:
