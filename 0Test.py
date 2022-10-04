@@ -1,7 +1,24 @@
+a = 5
 
+if a == 5:
+    a -= 2
+elif a == 3:
+    a = 10
+
+print(a)
+
+
+'''
+a = 5
+
+b = [[] for i in range(a)]
+print(b)
+'''
+
+'''
 a = [1, 2, 3]
 print(a[1:2])
-
+'''
 
 '''
 nums1 = [1, 2]
