@@ -1,3 +1,27 @@
+
+'''
+a = [['1'], ['2'], ['3'], ['4']]
+res = ""
+res += '->'.join(a)
+print(res)
+'''
+# use for loop to join a string list
+'''
+a = {"1", "2", "3"}
+res = ""
+res = 'a'.join(a)
+print(res)
+
+'''
+
+
+
+
+
+
+
+
+'''
 a = 5
 
 if a == 5:
@@ -6,7 +30,7 @@ elif a == 3:
     a = 10
 
 print(a)
-
+'''
 
 '''
 a = 5
