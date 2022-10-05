@@ -1,8 +1,43 @@
+
+
+'''
+testdic = {
+    'path': "aa",
+    'path': "bb",
+    'path': "cc"
+}
+for i, image in enumerate(testdic):
+    print(i, testdic[image])
+    print(type(testdic[image]))
+
+print(type(testdic))
+'''
+
+images=[                             # C:/Users/16591/Desktop/Github/LongtailDistribution/code/  test   /  angry.jpg
+            {'path': 'C:/Users/16591/Desktop/Github/LongtailDistribution/code/test/angry.jpg'},
+            {'path': 'C:/Users/16591/Desktop/Github/LongtailDistribution/code/test/happy.jpg'},
+            {'path': 'C:/Users/16591/Desktop/Github/LongtailDistribution/code/test/sad.jpg'},
+            {'path': 'C:/Users/16591/Desktop/Github/LongtailDistribution/code/test/surprised.jpg'},
+        ]
+print(type(images))
+
+for i, image in enumerate(images):
+    print(i, image)
+    print(image['path'])
+
+
+'''
+
+
+for image in enumerate(images):
+    print(image['path'])
+'''
+
+
+'''
 a = "4"
 print(-int(a))
-
-
-
+'''
 
 '''
 s = "   sd  sd  sdfafd "
