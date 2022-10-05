@@ -1,4 +1,16 @@
 
+test = {}
+print(type(test))
+
+b = 2
+
+a = b == 1
+print(a)
+
+'''
+for i in range(-20, -8):
+    print(-i)
+'''
 
 '''
 testdic = {
@@ -12,7 +24,7 @@ for i, image in enumerate(testdic):
 
 print(type(testdic))
 '''
-
+'''
 images=[                             # C:/Users/16591/Desktop/Github/LongtailDistribution/code/  test   /  angry.jpg
             {'path': 'C:/Users/16591/Desktop/Github/LongtailDistribution/code/test/angry.jpg'},
             {'path': 'C:/Users/16591/Desktop/Github/LongtailDistribution/code/test/happy.jpg'},
@@ -24,7 +36,7 @@ print(type(images))
 for i, image in enumerate(images):
     print(i, image)
     print(image['path'])
-
+'''
 
 '''
 
