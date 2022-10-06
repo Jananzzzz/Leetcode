@@ -1,6 +1,8 @@
 
 
-
+numbers = [1,2,3,4,5]
+print(sum(numbers))
+print(sum(numbers[:4]))
 
 '''
 # sets are unordered, so you cannot be sure in which order the items will appear.
