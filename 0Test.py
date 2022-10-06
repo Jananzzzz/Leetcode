@@ -1,4 +1,96 @@
 
+
+
+
+'''
+# sets are unordered, so you cannot be sure in which order the items will appear.
+nums = [1, 2, 3, 2, 5, 5, 6, 4, 7,]
+thisset = {"apple", "banana", "cherry", "apple"}
+# duplicated items will be ignored
+print(thisset)
+print(len(thisset))
+set1 = set()
+set1.add("apple")  # use .add() funvtion to add items to a set
+set2 = set(("apple",))
+print(set1, set2)
+'''
+
+'''
+#def threeSum(self, nums: List[int]) -> List[List[int]]:
+if len(nums) < 3:
+    print([])
+ans = set()
+nums.sort()
+for i, target in enumerate(nums):
+    if i > 0 and target == nums[i -1]:
+        continue
+    prev = set()
+    for j in range(i + 1,len(nums)):
+        diff = -target - nums[j]
+        if diff in prev:
+            ans.add((target, nums[j], diff))
+        prev.add(nums[j])
+
+print(ans)
+print(type(ans))
+'''
+
+'''
+seen = {1:3, 2:4, 5:6, 6:7}
+for i in seen:
+    print(i)
+'''
+
+'''
+nums = [1, 2, 3, 2, 5, 5, 6, 4, 7,]
+target = 9
+seen1 = {}
+res = []
+
+def twosumfunction(target2, i):
+    seen2 = {}
+    res = {}
+    for j, num in enumerate(nums[i+1:]):
+        if target2 - num in seen2:
+            res.append([target2-num, num])
+        elif num not in seen2:
+            seen2[num] = j
+    return res
+    
+for i, num in enumerate(nums):
+    if target - num in seen1:
+        res1 = twosumfunction(target-sum, i)
+        for i in res1:
+            res += i.append(num)
+    if num not in seen1:
+        seen1[num] = i 
+
+print(res) 
+'''
+
+'''
+res = []
+seen = {}
+for i, num in enumerate(nums[:-2]):
+    if target - num in seen:
+        # return([seen[target-num], i]
+        res.append([target-num, num])
+    elif num not in seen:
+        seen[num] = i 
+print(res)
+'''
+
+'''
+a = [1,[1,2], 3, 4, 5, 5, 5]
+if [2,1] in a: print(0)
+'''
+
+'''
+a = "abs" * 5
+print(a)
+'''
+
+'''
 test = {}
 print(type(test))
 
@@ -6,6 +98,8 @@ b = 2
 
 a = b == 1
 print(a)
+'''
+
 
 '''
 for i in range(-20, -8):
