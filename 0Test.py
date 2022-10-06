@@ -1,8 +1,35 @@
+res = []
+if res == []:
+    print(1)
+
+num = 1
+listnum = [num]
+list = []
+list.append(listnum)
+print(list, type(list))
+print(num, type(num))
 
 
+
+
+
+'''
+res = []
+res1 = [[]]
+res2 = [[],[]]
+
+print(res)
+print(len(res2))
+# if res == NULL: print(1)  there is no NULL keyword in python.
+if res1 == None: print(2)
+if res2 == None: print(3)
+'''
+
+'''
 numbers = [1,2,3,4,5]
 print(sum(numbers))
 print(sum(numbers[:4]))
+'''
 
 '''
 # sets are unordered, so you cannot be sure in which order the items will appear.
