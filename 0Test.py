@@ -1,7 +1,34 @@
 
 
 
+'''
+tuple = {"a", "b", "c"}
+tuple2 = ("a", "b", "c")
+res = []
+res = "make".join(tuple2)
+print(res)
+# tuple is inordered like a set
+dict = {
+    "a": "1",
+    "b": "2",
+    "c": "3"
+}
+res2 = []
+res2 = "make".join(dict)      # the "make" before join is a separator.
+print(res2)
+'''
 
+
+'''
+a = "aa"
+ans = []
+print(type(ans))
+ans = "".join(a)
+ans = "2"
+ans = "".join("1")
+print(ans)
+print(type(ans))
+'''
 
 
 '''
