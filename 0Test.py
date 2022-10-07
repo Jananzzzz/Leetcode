@@ -1,8 +1,11 @@
 
 
 
+
+
+
 '''
-nums = [1,2,3,4,32,2,2,2]
+nums = [-2,-1,-1,1,1,2,2]
 new = sorted(nums)
 print(new)
 
@@ -14,9 +17,9 @@ def twoSum(nums: list[int], target: int) -> list[list[int]]:
     lo = 0
     hi = len(nums)-1
     while lo < hi:
-        if nums[lo] + nums[hi] < target:
+        if nums[lo] + nums[hi] < target or (lo > 0 and nums[lo] == nums[lo - 1]):
             lo += 1
-        elif nums[lo] + nums[hi] >  target:
+        elif nums[lo] + nums[hi] >  target or (hi < len(nums) - 1 and nums[hi] == nums[hi + 1]):
             hi -= 1
         else: 
             res.append([nums[lo], nums[hi]])
@@ -25,10 +28,10 @@ def twoSum(nums: list[int], target: int) -> list[list[int]]:
              
     return res
 
-res = twoSum(nums, 3)
+res = twoSum(nums, 0)
 print(res)
-
 '''
+
 
 '''
 res = []
