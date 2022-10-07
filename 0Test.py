@@ -1,6 +1,67 @@
 
 
 
+''''
+class ListNode:
+    def __init__(self, data): # this part we define the node with input 
+        self.data = data
+        self.next = None
+        
+    def __repr__(self):       # this part return the value we want to repr the node
+        return self.data   
+        
+ # initialize a linked list with a head node:
+ 
+class LinkedList:
+    def __init__(self, nodes=None): # define linkedlist quickly with input node value (default 0)
+        self.head = None
+        if nodes is not None:
+            node = ListNode(data=nodes.pop(0))
+            self.head = node
+            for element in nodes:
+                node.next = ListNode(data=element)
+                node = node.next
+
+    def __repr__(self): # represent the whole list from head, then traverse the list
+        node = self.head
+        nodes = []    # create a nodes function to represent the linked list as a common list
+        while node is not None:
+            nodes.append(node.data)
+            node = node.next
+        nodes.append("None")
+        return "->".join(nodes)
+
+linkedlist2 = LinkedList(["a", "b", "c", "d","e"])
+print(linkedlist2)
+
+first_node = ListNode("M")  # we defined a repr module.
+print(first_node)
+'''
+
+
+'''
+list = [1,2,3]
+a = list.pop(0)
+
+print(a)
+'''
+
+'''
+list = [1,2,3,4,5,6]
+list.pop()
+print(list)
+list.pop(2)
+print(list)
+'''
+'''
+a = 2
+b = 3
+print(f"a = {a}, b = {b}")
+a,b = b,a
+print("after exchange: ")
+print("a = {}, b = {}".format(a,b))
+'''
+
 '''
 tuple = {"a", "b", "c"}
 tuple2 = ("a", "b", "c")
