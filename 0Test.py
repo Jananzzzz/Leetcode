@@ -1,3 +1,36 @@
+
+
+
+'''
+nums = [1,2,3,4,32,2,2,2]
+new = sorted(nums)
+print(new)
+
+def twoSum(nums: list[int], target: int) -> list[list[int]]:
+    
+    nums = sorted(nums)
+    res = []
+    
+    lo = 0
+    hi = len(nums)-1
+    while lo < hi:
+        if nums[lo] + nums[hi] < target:
+            lo += 1
+        elif nums[lo] + nums[hi] >  target:
+            hi -= 1
+        else: 
+            res.append([nums[lo], nums[hi]])
+            lo += 1
+            hi -= 1
+             
+    return res
+
+res = twoSum(nums, 3)
+print(res)
+
+'''
+
+'''
 res = []
 if res == []:
     print(1)
@@ -8,10 +41,7 @@ list = []
 list.append(listnum)
 print(list, type(list))
 print(num, type(num))
-
-
-
-
+'''
 
 '''
 res = []
