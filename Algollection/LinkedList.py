@@ -3,6 +3,9 @@
 # we only need to store where the list starts when initialize a list
 
 
+from platform import python_branch
+
+
 class LinkedList:
     def __init__(self, nodes=None): # define linkedlist quickly with input node (default 0)
         self.head = None
@@ -36,6 +39,23 @@ class ListNode:
         
     def __repr__(self):
         return self.data
+     
+
+
+linkedlist1 = LinkedList(["a", "b", "c", "d","e"])
+print(linkedlist1)
+
+# how to retrieve and insert a node in the linked list we create?
+for i in linkedlist1:
+    if i.data == "b":
+        i.next = i.next.next
+
+print(linkedlist1)
+
+
+
+
+
 '''
 Llist = LinkedList()
 print(Llist)
@@ -59,18 +79,4 @@ for node in linkedlist2:
 # change the variable name to A with give you a better understanding
 for A in linkedlist2:
     print(A)
-'''        
-
-
-linkedlist1 = LinkedList(["a", "b", "c", "d","e"])
-print(linkedlist1)
-
-# how to retrieve and insert a node in the linked list we create?
-for i in linkedlist1:
-    if i.data == "b":
-        i.next = i.next.next
-
-print(linkedlist1)
-
-
-
+'''   
