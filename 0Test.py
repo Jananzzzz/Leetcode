@@ -1,6 +1,19 @@
 
 
 
+
+# you cannot pass anything by value in python :(
+'''
+a = [1,2,3]
+b = []
+b = a 
+b.append(4)
+print(a)
+c = a[:]
+c.append(9)
+print(a)
+print(c)
+'''
 ''''
 class ListNode:
     def __init__(self, data): # this part we define the node with input 
