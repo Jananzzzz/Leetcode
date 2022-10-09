@@ -1,4 +1,35 @@
 
+a = [1,3,4,2,5,3,2,5,6]
+for i, e in reversed(a):
+    print(i,e)
+
+
+'''
+import time
+import random
+
+res1 = 0
+res2 = 0
+
+start_time1 = time.time()
+
+for i in range(10000):
+    res1 += random.randint(0,9999)
+
+end_time1 = time.time()
+
+start_time2 = time.time()
+
+for i in range(10000):
+    res2 += i
+end_time2 = time.time()
+
+
+print("calculate1 uses time: ", end_time1 - start_time1)
+print("calculate2 uses time: ", end_time2 - start_time2)
+
+print(res1, res2)
+'''
 '''
 a = [2,2,3]
 b = a.copy()
