@@ -1,6 +1,33 @@
 
+'''
+a = [2,2,3]
+b = a.copy()
+b.append(4)
+print(b)
+print(a)
+'''
 
+'''
+from collections import Counter
 
+# Counter with sequence of items
+print(Counter(['b','b','a','c','b','a','b']))
+
+# Counter with dictionary
+print(Counter({'a':2,'b':3,'c':3}))
+
+# Counter with keywords arguments
+print(Counter(a=3,b=2,c=5))
+'''
+
+'''
+list = [1, 3, 4, 3  ]
+print(max(list))
+
+test = []
+if test:
+    print(1)
+'''
 
 # you cannot pass anything by value in python :(
 '''
