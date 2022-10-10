@@ -1,8 +1,28 @@
+from math import factorial
 
+
+#print(factorial(3))
+m = 2
+n = 4
+grid = [[1 for _ in range(n)] for x in range(m)]
+print(grid)
+list = [i for i in range(m)]
+print(list)
+'''
+string = "aaa"
+string = "nn"
+print(string)
+
+k = 8
+k = k>>1
+print(k)
+'''
+
+'''
 a = [1,3,4,2,5,3,2,5,6]
 for i, e in reversed(a):
     print(i,e)
-
+'''
 
 '''
 import time
