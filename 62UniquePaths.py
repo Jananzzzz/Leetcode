@@ -1,4 +1,6 @@
+from calendar import c
 from math import factorial
+from re import A
 
 
 class Solution:
@@ -18,3 +20,20 @@ class Solution1:
 
 test = Solution
 print(test.uniquePaths(test,3,4))
+
+
+# ahow will i make such stupid thinds my god.s fas A at the end of the block i  
+# ahow will i make such stupid thinds my god.fasldk fasd                           # we can comment here.
+# show will i make such stupid thinds my god.fa df as                              # we can comment here.
+# hhow will i make such stupid thinds my god.ow can i maaf asdfasdf              we type here.   # we can comment here.
+# ahow will i make such stupid thinds my god.fasdf                               we type here.   # we can comment here.
+# fhow will i make such stupid thinds my god.asdjaslkd                           we type here.   # we can comment here.
+# vhow will i make such stupid thinds my god.                                    we type here.   # we can comment here.
+
+
+# vhow will i make such stupid thinds my mmm.                                    we type here.   # we can comment here.
+# vhow will i make such stupid thinds my mmm.                                    we type here.   # we can comment here.
+# vhow will i make such stupid thinds my mmm.                                    we type here.   # we can comment here.
+# you can use "r" to replace the selected can i ffff.
+# awesome
+
