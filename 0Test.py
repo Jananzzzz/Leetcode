@@ -1,3 +1,11 @@
+ 
+
+
+
+
+
+
+'''
 from math import factorial
 
 
@@ -8,6 +16,9 @@ grid = [[1 for _ in range(n)] for x in range(m)]
 print(grid)
 list = [i for i in range(m)]
 print(list)
+
+
+'''
 '''
 string = "aaa"
 string = "nn"
