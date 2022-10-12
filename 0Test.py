@@ -1,8 +1,22 @@
- 
+
+brand = ("huawei","apple","samsung")
+price = (1,2,4)
+x = zip(brand,price)
+x = list(x)
+x.sort()
+print(list(x))
+for i in range(3):
+    print(x[i][1])
 
 
-
-
+'''
+s = "a"
+print(s[1:]) 
+if s[1:] > "":
+    print(1)
+if s[1:] == "":
+    print(2)
+'''
 
 
 '''
