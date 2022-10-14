@@ -1,4 +1,36 @@
 
+
+
+
+
+
+'''
+import collections
+from collections import Counter
+
+count = collections.Counter()
+
+for i in range(10):
+    count[i] += 1
+
+print(count)
+
+
+'''
+
+'''
+from collections import Counter
+
+list = [2,3,3,2,5,4,5,6,3,3,4,4,5,5,2]
+res = Counter(list)
+print(res)
+print(res[2])
+
+
+'''
+
+'''
+
 brand = ("huawei","apple","samsung")
 price = (1,2,4)
 x = zip(brand,price)
@@ -7,7 +39,7 @@ x.sort()
 print(list(x))
 for i in range(3):
     print(x[i][1])
-
+'''
 
 '''
 s = "a"
