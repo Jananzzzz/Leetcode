@@ -1,6 +1,8 @@
 
-
-
+a = input("input your value for a:")
+b = a 
+a = 3
+print(a, b)
 
 
 # this is a test for git proxy configuration.
@@ -15,6 +17,9 @@ for i in range(10):
     count[i] += 1
 
 print(count)
+
+print(ord('A'))
+print(ord('a'))
 
 
 '''
