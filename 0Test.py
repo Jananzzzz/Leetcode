@@ -1,8 +1,13 @@
+a = "abdcdc"
+a = set(a)
+print(a)
 
+'''
 a = input("input your value for a:")
 b = a 
 a = 3
 print(a, b)
+'''
 
 
 # this is a test for git proxy configuration.
