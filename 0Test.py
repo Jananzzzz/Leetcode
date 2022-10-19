@@ -2,6 +2,7 @@ a = "abdcdc"
 a = set(a)
 print(a)
 
+
 '''
 a = input("input your value for a:")
 b = a 
