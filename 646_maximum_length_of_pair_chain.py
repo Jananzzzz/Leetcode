@@ -18,4 +18,13 @@ Explanation: The longest chain is [1,2] -> [4,5] -> [7,8].
 
 class Solution:
     def findLongestChain(self, pairs: list[list[int]]) -> int:
-        pass
+        pairs.sort(key=lambda x: x[1])
+        current = float('-inf')
+        ans = 0
+
+        for pair in pairs:
+            if current < pair[0]:
+                current = pair[1]
+                ans += 1
+
+        return ans
