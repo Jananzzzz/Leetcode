@@ -28,3 +28,16 @@ Explanation: There are 10 pairs of indices that satisfy the conditions in the st
 - (4, 5) since 4 < 5 and nums[4] + nums[5] = -8 < target
 - (4, 6) since 4 < 6 and nums[4] + nums[6] = -4 < target
 """
+
+class Solution:
+    def countPairs(self, nums: list[int], target: int) -> int:
+        count = 0
+        for i in range(len(nums)):
+            for j in range(i+1, len(nums)):
+                if (nums[i] + nums[j]) < target:
+                    count += 1
+        return count
+
+print(Solution.countPairs(Solution(), nums = [-1,1,2,3,1], target = 2))
+print(Solution.countPairs(Solution(), nums = [-6,2,5,-2,-7,-1,3], target = -2))
+        
