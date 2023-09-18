@@ -2,7 +2,8 @@
 
 # ababcdddmmscscs
 
-# brute force: time limit exceed
+# brute force: time limit exceed 
+# time complexity: n^3
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         s_list = [i for i in s]
@@ -16,9 +17,40 @@ class Solution:
                         max_string = ''.join(s_list[i:j])
         return max_string
 
+# palindrome from the center
+# time complexity: n^2
 class Solution:
     def longestPalindrome(self, s: str) -> str:
+        res = ""
+        max_len = 0
+
+        for i in range(len(s)):
+
+            # odd length            
+            left = i
+            right = i
+            while left >= 0 and right < len(s) and s[left] == s[right]:
+                if (right - left + 1) > max_len:
+                    res = s[left: right + 1]
+                    max_len = right - left + 1
+                left -=  1
+                right += 1
+            
+            # even length
+            left = i
+            right = i + 1
+            while left >= 0 and right < len(s) and s[left] == s[right]:
+                if (right - left + 1) > max_len:
+                    res = s[left: right + 1]
+                    max_len = right - left + 1
+                left -= 1
+                right += 1
         
+        return res
+            
+
+                
+
     
 
 print(Solution.longestPalindrome(Solution(), s="ababc"))

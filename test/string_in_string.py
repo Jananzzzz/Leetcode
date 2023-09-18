@@ -1,3 +1,3 @@
 a = "abcde"
 b = "abc"
-print(b in a)
+print(b in a) # True
